@@ -15,7 +15,7 @@ const Silder = () => {
     <Carousel activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item className="slider-background" interval={2000}>
         <div className="d-flex flex-row justify-content-center align-items-center">
-          <div style={{ marginRight: "10px" }}>
+          <div className="">
             <h3 className="slider-title">There is a big discount</h3>
             <p className="slider-text">Up to 50% off when you buy</p>
           </div>
@@ -28,7 +28,7 @@ const Silder = () => {
       </Carousel.Item>
       <Carousel.Item className="slider-background2" interval={2000}>
         <div className="d-flex flex-row justify-content-center align-items-center">
-          <div style={{ marginRight: "10px" }}>
+          <div className="">
             <h3 className="slider-title">There is a big discount</h3>
             <p className="slider-text">Up to 50% off when you buy</p>
           </div>
@@ -42,7 +42,7 @@ const Silder = () => {
 
       <Carousel.Item className="slider-background3" interval={2000}>
         <div className="d-flex flex-row justify-content-center align-items-center">
-          <div style={{ marginRight: "10px" }}>
+          <div className="">
             <h3 className="slider-title">There is a big discount</h3>
             <p className="slider-text">Up to 50% off when you buy</p>
           </div>
@@ -56,7 +56,7 @@ const Silder = () => {
 
       <Carousel.Item className="slider-background4" interval={2000}>
         <div className="d-flex flex-row justify-content-center align-items-center">
-          <div style={{ marginRight: "10px" }}>
+          <div className="">
             <h3 className="slider-title">There is a big discount</h3>
             <p className="slider-text">Up to 50% off when you buy</p>
           </div>
