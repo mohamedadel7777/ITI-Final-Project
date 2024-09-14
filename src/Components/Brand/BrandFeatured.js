@@ -9,7 +9,7 @@ import brand3 from "../../images/brand3.png";
 const BrandFeatured = ({ title, btnTitle }) => {
   return (
     <Container>
-    <SubTitle title={title} btntitle={btnTitle} pathText="/allbrand" />
+    <SubTitle title={title} btntitle={btnTitle} pathText="/AllBrandsPage" />
       <Row className="my-1 d-flex justify-content-between">
         <BrandCard img={brand1} />
         <BrandCard img={brand2} />

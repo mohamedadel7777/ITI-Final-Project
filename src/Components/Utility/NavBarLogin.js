@@ -23,7 +23,7 @@ const NavBarLogin = () => {
           />
           <Nav className="me-auto">
             <Nav.Link
-              href="/login"
+              href="/Login"
               className="nav-text d-flex mt-3 justify-content-center"
             >
               <img src={login} className="login-img" alt="Login-image" />
