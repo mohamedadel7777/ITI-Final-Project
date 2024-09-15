@@ -2,7 +2,10 @@ import { Form, Button, Row, Col, Card } from 'react-bootstrap';
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from '@hookform/resolvers/zod';
-import { Link } from 'react-router-dom'; 
+import { Link, useNavigate } from 'react-router-dom'; 
+import { loginUser } from '../../redux/AuthSlice';
+import { useDispatch } from 'react-redux';
+
 
 // Define the schema for login validation with only email and password
 const loginSchema = z.object({
@@ -15,10 +18,21 @@ const Login = () => {
     resolver: zodResolver(loginSchema),
     mode: "onBlur"
   });
+  const navigate = useNavigate(); 
+  const dispatch = useDispatch();
 
-  const onSubmit = (data) => {
-    console.log(data);
+
+  const onSubmit = async (data) => {
+    try {
+    const result = await dispatch(loginUser(data)).unwrap(); 
+    if (result) {
+      navigate("/");
+    }
+  } catch (error) {
+    console.log(error);
+    alert("please check your email and password");
   };
+}
 
   return (
     <Row className="my-5">

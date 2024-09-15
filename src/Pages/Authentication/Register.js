@@ -2,7 +2,9 @@ import { Form, Button, Row, Col, Card } from 'react-bootstrap';
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from '@hookform/resolvers/zod';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { registerUser } from "../../redux/AuthSlice";
 
 const signUpSchema = z.object({
   FirstName: z.string().min(1, { message: "FirstName is required" }),
@@ -19,8 +21,19 @@ const Register = () => {
     mode: "onBlur"
   });
 
+  const navigate = useNavigate(); 
+  const dispatch = useDispatch();
   const onSubmit = (data) => {
-    console.log(data);
+     dispatch(registerUser({
+      FirstName: data.FirstName,
+      LastName: data.LastName,
+      Email: data.Email,
+      Password: data.Password
+     }))
+    navigate("/");
+    
+
+
   };
 
   return (
