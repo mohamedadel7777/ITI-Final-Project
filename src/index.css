@@ -2,18 +2,29 @@ body {
   margin: 0;
   font-family: "Almarai", sans-serif;
 }
+<<<<<<< HEAD
 html,
 body {
   height: 100%;
+=======
+html, body {
+  height: 100%; 
+>>>>>>> 7a68e63663739d8565d6a17b398f4c0d6d8af009
   margin: 0;
   display: flex;
   flex-direction: column;
 }
+<<<<<<< HEAD
 a {
   text-decoration: none;
 }
 #root {
   flex: 1;
+=======
+
+#root {
+  flex: 1; 
+>>>>>>> 7a68e63663739d8565d6a17b398f4c0d6d8af009
 }
 
 .m-0 {
@@ -196,7 +207,11 @@ a {
   width: 100%;
   position: "fixed";
   bottom: 0;
+<<<<<<< HEAD
   zindex: 1000;
+=======
+  zIndex: 1000;
+>>>>>>> 7a68e63663739d8565d6a17b398f4c0d6d8af009
 }
 .footer-shoot {
   color: #979797;
