@@ -2,11 +2,19 @@ import React from "react";
 import { Card, Col } from "react-bootstrap";
 import favoff from "../../images/fav-off.png";
 import rate from "../../images/rate.png";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+const products = [
+  { id: 1, name: 'Product 1', image: 'image1.jpg', description: 'Description 1', price: '$10', rating: 4 },
+  { id: 2, name: 'Product 2', image: 'image2.jpg', description: 'Description 2', price: '$20', rating: 5 },
+  { id: 3, name: 'Product 3', image: 'image1.jpg', description: 'Description 1', price: '$40', rating: 4 },
+  { id: 4, name: 'Product 4', image: 'image2.jpg', description: 'Description 2', price: '$50', rating: 5 },
+  
+];
 
-const ProductCard = ({ imgName, productTitle, price, rating }) => {
+const ProductCard = ({ imgName, productTitle, price, rating, productId }) => {
   return (
     <Col xs="6" sm="6" md="4" lg="3" className="d-flex">
+    <Link to={`/ProductDetails/${productId}`}>
       <Card
         className="my-2"
         style={{
@@ -18,8 +26,7 @@ const ProductCard = ({ imgName, productTitle, price, rating }) => {
           boxShadow: "2px 2px 2px 0 rgba(151,151,151,0.5)",
         }}
       >
-        {/* <Link to="/products/:id" style={{ textDecoration: "none" }}> */}
-        {/* </Link> */}
+       
         <Card.Img
           style={{ height: "250px", width: "250px", margin: "auto" }}
           src={imgName}
@@ -55,6 +62,7 @@ const ProductCard = ({ imgName, productTitle, price, rating }) => {
           </Card.Text>
         </Card.Body>
       </Card>
+      </Link>
     </Col>
   );
 };
