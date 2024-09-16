@@ -24,7 +24,7 @@ The following technologies were used in the development of this project:
 ## Setup
 follow the following steps to run the project:
 <ul>
-  <li>Install Node.js from [Node.js](https://nodejs.org/en)</li>
+  <li>Install Node.js from [Node.js](https://nodejs.org/en) </li>
   <li>Clone this repo on your local machine.</li>
   <li>Run these commands on the project directory respectively:
   <ul>
@@ -36,3 +36,12 @@ follow the following steps to run the project:
 </ul>
 
 ## ScreenShots From the project:
+<picture>
+  <img alt="Project image 1" src="./src/assets/ProjectScreenshots/1.png">
+</picture>
+<picture>
+  <img alt="Project image 2" src="./src/assets/ProjectScreenshots/2.png">
+</picture>
+<picture>
+  <img alt="Project image 3" src="./src/assets/ProjectScreenshots/3.png">
+</picture>
