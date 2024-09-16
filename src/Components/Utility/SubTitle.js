@@ -6,10 +6,10 @@ const SubTiltle = ({ title, btntitle, pathText }) => {
     <div className="d-flex justify-content-between pt-4">
       <div className="sub-title">{title}</div>
       {btntitle ? (
-      <Link to = {`${pathText}`} style={{textDecoration : "none"}}>
-     <div className='shopping-now'>{btntitle}</div> 
-     </Link> )
-      : null}
+        <Link to={`${pathText}`} style={{ textDecoration: "none" }}>
+          <div className="shopping-now">{btntitle}</div>
+        </Link>
+      ) : null}
     </div>
   );
 };

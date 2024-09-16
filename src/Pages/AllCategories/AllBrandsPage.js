@@ -7,7 +7,6 @@ const AllBrandsPage = () => {
     <div style={{minHeight : "670px"}}>
       <BrandContainer/>
       <Pagination/>
-      
     </div>
   )
 }

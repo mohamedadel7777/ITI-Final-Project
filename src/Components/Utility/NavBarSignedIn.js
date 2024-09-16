@@ -1,15 +1,20 @@
 import React from "react";
-import { Navbar, Container, FormControl, Nav , Dropdown } from "react-bootstrap";
-import { useSelector } from "react-redux"; 
+import { Navbar, Container, FormControl, Nav, Dropdown } from "react-bootstrap";
+import { useSelector } from "react-redux";
 import logo from "../../images/logo.png";
 import login from "../../images/login.png";
 import cart from "../../images/cart.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import { Badge } from "react-bootstrap";
+import "react-router-dom";
 
 const NavBarSignedIn = () => {
-  const user = useSelector((state) => state.auth.user); 
-   const handleLogoutClick = () => {
-      window.location.href = "./ReAuthenticate"; 
+  const user = useSelector((state) => state.auth.user);
+  const handleLogoutClick = () => {
+    window.location.href = "./ReAuthenticate";
   };
+  const cartItems = useSelector((state) => state.cart.items);
 
   return (
     <Navbar className="sticky-top" bg="dark" variant="dark" expand="sm">
@@ -35,18 +40,40 @@ const NavBarSignedIn = () => {
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                 <Dropdown.Item href="#/action-1">manage Your Profile</Dropdown.Item>
-                 <Dropdown.Item onClick={handleLogoutClick}>Log Out</Dropdown.Item>
+                  <Dropdown.Item href="#/action-1">
+                    manage Your Profile
+                  </Dropdown.Item>
+                  <Dropdown.Item onClick={handleLogoutClick}>
+                    Log Out
+                  </Dropdown.Item>
                 </Dropdown.Menu>
-               </Dropdown>
+              </Dropdown>
             </Nav.Link>
-            <Nav.Link
-              href="/cart"
-              className="nav-text d-flex mt-3 justify-content-center"
-              style={{ color: "white" }}>
-              <img src={cart} className="login-img" alt="Cart-image" />
-            
-              <p>Cart</p>
+            <Nav.Link href="/cart">
+              <div
+                style={{
+                  position: "absolute",
+                  display: "inline-block ",
+                  right: "40px",
+                  top: "25px",
+                }}
+              >
+                <FontAwesomeIcon icon={faShoppingCart} size="2x" />
+                {cartItems.length > 0 && (
+                  <Badge
+                    pill
+                    bg="danger"
+                    style={{
+                      position: "absolute",
+                      top: "0",
+                      right: "-10px",
+                      transform: "translate(-50%, -50%)",
+                    }}
+                  >
+                    {cartItems.length}
+                  </Badge>
+                )}
+              </div>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

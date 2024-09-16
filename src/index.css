@@ -2,6 +2,20 @@ body {
   margin: 0;
   font-family: "Almarai", sans-serif;
 }
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+a {
+  text-decoration: none;
+}
+#root {
+  flex: 1;
+}
+
 .m-0 {
   margin: 0;
 }
@@ -175,10 +189,14 @@ body {
 /* footer */
 .footer-background {
   background-color: #ffffff;
+  height: 60px;
 }
 
 .footer {
   width: 100%;
+  position: "fixed";
+  bottom: 0;
+  zindex: 1000;
 }
 .footer-shoot {
   color: #979797;
@@ -482,6 +500,20 @@ body {
   line-height: 28px;
   text-align: right;
 }
+.admin-content-text-products {
+  color: #555550;
+  font-family: Almarai;
+  font-size: 35px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 28px;
+  text-align: center;
+  border: 2px solid #555550;
+  width: fit-content;
+  margin: 15px auto;
+  padding: 8px 15px;
+  border-radius: 7px;
+}
 .item-delete-edit {
   color: #979797;
   font-family: "Almarai";
@@ -662,5 +694,5 @@ body {
 #custom-dropdown-toggle {
   background-color: #212529;
   border: none !important;
-  color: white; 
+  color: white;
 }

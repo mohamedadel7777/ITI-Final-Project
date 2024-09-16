@@ -8,8 +8,6 @@ import BrandFeatured from "../../Components/Brand/BrandFeatured";
 import { useSelector } from "react-redux";
 
 
-
-
 const HomePage = () => {
   const user = useSelector((state) => state.auth.user); 
   console.log(user.Password)
@@ -20,11 +18,10 @@ const HomePage = () => {
       <HomeCategory />
       <CardProductContainer title={"Best Seller"} btnTitle={"More"} />
       <DiscountSection />
-      <CardProductContainer title={"Trending"} btnTitle={"More"} />
+      <CardProductContainer title={"Trending"}  />
       <BrandFeatured title={"Common Brands"} btnTitle={"More Brands"} />
     </div>
   );
 };
-console.log()
 
 export default HomePage;
