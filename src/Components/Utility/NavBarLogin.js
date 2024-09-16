@@ -29,14 +29,6 @@ const NavBarLogin = () => {
               <img src={login} className="login-img" alt="Login-image" />
               <p style={{ color: "white" }}>Login</p>
             </Nav.Link>
-            <Nav.Link
-              href="/cart"
-              className="nav-text d-flex mt-3 justify-content-center"
-              style={{ color: "white" }}
-            >
-              <img src={cart} className="login-img" alt="Cart-image" />
-              <p style={{ color: "white" }}>Cart</p>
-            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

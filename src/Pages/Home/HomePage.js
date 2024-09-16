@@ -20,7 +20,7 @@ const HomePage = () => {
       <HomeCategory />
       <CardProductContainer title={"Best Seller"} btnTitle={"More"} />
       <DiscountSection />
-      <CardProductContainer title={"Trending"} btnTitle={"More"} />
+      <CardProductContainer title={"Trending"}  />
       <BrandFeatured title={"Common Brands"} btnTitle={"More Brands"} />
     </div>
   );

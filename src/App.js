@@ -9,6 +9,8 @@ import Footer from "./Components/Utility/Footer";
 import Register from "./Pages/Authentication/Register"
 import ReAuthenticate from "./Pages/Authentication/ReAuthenticate";
 import { useSelector } from 'react-redux';
+import ProductDetails from "./Components/Products/ProductDetails"
+import Cart from "./Components/Products/Cart"
 
 
 
@@ -27,6 +29,8 @@ function App() {
         <Route path = "/AllBrandsPage" element = {<AllBrandsPage/>}/>
         <Route path = "/Register" element = {<Register/>}/>
         <Route path="/ReAuthenticate" element={<ReAuthenticate/>} />
+        <Route path = "/ProductDetails/:productId" element = {<ProductDetails/>}/>
+        <Route path="/cart" element={<Cart/>} />
 
        </Routes>
       </BrowserRouter>
