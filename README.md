@@ -46,14 +46,14 @@ follow the following steps to run the project:
   <img alt="Project image 3" src="./src/assets/ProjectScreenshots/2.png">
 </picture>
 <picture>
-  <img alt="Project image 3" src="./src/assets/ProjectScreenshots/7.png">
+  <img alt="Project image 4" src="./src/assets/ProjectScreenshots/7.png">
 </picture>
 <picture>
-  <img alt="Project image 3" src="./src/assets/ProjectScreenshots/3.png">
+  <img alt="Project image 5" src="./src/assets/ProjectScreenshots/3.png">
 </picture>
 <picture>
-  <img alt="Project image 3" src="./src/assets/ProjectScreenshots/4.png">
+  <img alt="Project image 6" src="./src/assets/ProjectScreenshots/4.png">
 </picture>
 <picture>
-  <img alt="Project image 3" src="./src/assets/ProjectScreenshots/6.png">
+  <img alt="Project image 7" src="./src/assets/ProjectScreenshots/6.png">
 </picture>
