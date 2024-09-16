@@ -40,8 +40,20 @@ follow the following steps to run the project:
   <img alt="Project image 1" src="./src/assets/ProjectScreenshots/1.png">
 </picture>
 <picture>
-  <img alt="Project image 2" src="./src/assets/ProjectScreenshots/2.png">
+  <img alt="Project image 2" src="./src/assets/ProjectScreenshots/5.png">
+</picture>
+<picture>
+  <img alt="Project image 3" src="./src/assets/ProjectScreenshots/2.png">
+</picture>
+<picture>
+  <img alt="Project image 3" src="./src/assets/ProjectScreenshots/7.png">
 </picture>
 <picture>
   <img alt="Project image 3" src="./src/assets/ProjectScreenshots/3.png">
+</picture>
+<picture>
+  <img alt="Project image 3" src="./src/assets/ProjectScreenshots/4.png">
+</picture>
+<picture>
+  <img alt="Project image 3" src="./src/assets/ProjectScreenshots/6.png">
 </picture>
