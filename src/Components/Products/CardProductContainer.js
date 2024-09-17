@@ -11,7 +11,7 @@ export const Products = [
   
   {
     id: 1,
-    name: "earpods pro",
+    name: "earpods pro g2",
     image: earpods,
     description:
       "Immerse yourself in crystal-clear sound with our premium Earpods. Ergonomically designed for a comfortable fit, these Earpods deliver rich, high-quality audio, deep bass, and crisp highs. With seamless integration for hands-free calling and a sleek, tangle-free cord, they’re perfect for on-the-go use. Compatible with a variety of devices, they are the ideal companion for music lovers and professionals alike",
@@ -21,7 +21,7 @@ export const Products = [
 
   {
     id: 2,
-    name: "macbook pro",
+    name: "macbook pro g3",
     image: macbook,
     description:
       "The MacBook combines power, style, and portability into one. Featuring a sleek aluminum body and a Retina display for stunning visuals, this laptop is perfect for professionals, creatives, and students. Powered by the latest processor, it offers lightning-fast performance for multitasking, video editing, or heavy software use. With all-day battery life, the MacBook ensures you stay productive wherever you go.",
@@ -41,7 +41,7 @@ export const Products = [
 
   {
     id: 4,
-    name: "apple watch s 10",
+    name: "apple watch s10",
     image: smartWatch,
     description:
       "Stay connected and track your health effortlessly with our Smartwatch. Equipped with a high-resolution touch display, heart rate monitoring, and fitness tracking features, it’s your personal assistant on your wrist. Sync with your smartphone to receive notifications, manage calls, and track your workouts. With a sleek, modern design and customizable watch faces, this smartwatch is the perfect blend of style and functionality",

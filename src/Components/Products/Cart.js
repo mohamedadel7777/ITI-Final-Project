@@ -5,12 +5,14 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import { removeFromCart, updateQuantity } from "../../redux/CartSlice";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
+
 
 const Cart = () => {
   const cartItems = useSelector((state) => state.cart.items); // Get cart items from Redux
   const totalQuantity = useSelector((state) => state.cart.totalQuantity);
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const handleRemoveFromCart = (id) => {
     dispatch(removeFromCart(id)); // Remove item from cart
@@ -113,8 +115,8 @@ const Cart = () => {
               </Button>
               <span
                 style={{
-                  fontSize: "18px",
-                  marginLeft: "4px",
+                  fontSize: "20px",
+                  marginLeft: "10px",
                 }}
               >
                 {item.quantity}
@@ -162,14 +164,49 @@ const Cart = () => {
           <h4
             style={{
               textTransform: "capitalize",
-              marginBottom: "20px",
               fontWeight: "bold",
-              fontSize: "35px",
-              color: "#0075ff",
+              fontSize: "40px",
+              color: "#f44336",
+              border: "2px solid #f44336",
+              width: "fit-content",
+              margin: "auto",
+              padding: "5px",
+              borderRadius: "10px",
             }}
           >
-            Total: {calculateTotal()}💲
+            Total Price :{" "}
+            <span
+              style={{
+                fontSize: "35px",
+                marginLeft: "4px",
+              }}
+            >
+              {calculateTotal()}💲
+            </span>
           </h4>
+        </Col>
+        <Col md={12}>
+          <button
+            style={{
+              textTransform: "capitalize",
+              fontWeight: "bold",
+              fontSize: "30px",
+              color: "white",
+              backgroundColor: "#0075ff",
+              width: "fit-content",
+              margin: "30px auto 0",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              padding: "5px",
+              border: "2px solid white",
+              outline: "2px solid #0075ff",
+              borderRadius: "15px",
+            }}
+            onClick={() => navigate("/buynow", { replace: true })} // Redirect to /buynow when clicked
+          >
+            Buy Now
+          </button>
         </Col>
       </Row>
     </Container>

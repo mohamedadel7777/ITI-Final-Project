@@ -13,8 +13,7 @@ import ProductDetails from "./Components/Products/ProductDetails";
 import Cart from "./Components/Products/Cart";
 import AllProductsPage from "./Pages/AllCategories/AllProductsPage";
 import AdminPage from "./Pages/Home/AdminPage";
-
-
+import BuyNowPage from "./Components/Products/BuyNowPage";
 
 
 function App() {
@@ -41,7 +40,7 @@ function App() {
         <Route path = "/ProductDetails/:productId" element = {<ProductDetails/>}/>
         <Route path="/cart" element={<Cart/>} />
         <Route path="/Admin" element={<AdminPage/>}/>
-
+        <Route path="/buynow" element={<BuyNowPage />} />
        </Routes>
       </BrowserRouter>
       <Footer />
