@@ -14,11 +14,7 @@ const NavBarSignedIn = () => {
   const handleLogoutClick = () => {
     window.location.href = "./ReAuthenticate";
   };
-<<<<<<< HEAD
   const cartItems = useSelector((state) => state.cart.items);
-=======
-  const cartItems = useSelector((state) => state.cart.items); 
->>>>>>> 7a68e63663739d8565d6a17b398f4c0d6d8af009
 
   return (
     <Navbar className="sticky-top" bg="dark" variant="dark" expand="sm">
@@ -54,7 +50,6 @@ const NavBarSignedIn = () => {
               </Dropdown>
             </Nav.Link>
             <Nav.Link href="/cart">
-<<<<<<< HEAD
               <div
                 style={{
                   position: "absolute",
@@ -84,33 +79,6 @@ const NavBarSignedIn = () => {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-=======
-               <div style={{ position: "absolute", display: "inline-block ", right: "40px", top: "25px" }}>
-               <FontAwesomeIcon icon={faShoppingCart} size="2x" />
-               {cartItems.length > 0 && (
-                <Badge
-                  pill
-                 bg="danger"
-                 style={{
-                 position: "absolute",
-                 top: "0",
-                 right: "-10px",
-                 transform: "translate(-50%, -50%)",
-                }}
-        >
-                {cartItems.length}
-               </Badge>
-            
-                )}
-              </div>
-            
-              
-         </Nav.Link>
-       </Nav>
-    </Navbar.Collapse>
-  </Container>
- </Navbar>
->>>>>>> 7a68e63663739d8565d6a17b398f4c0d6d8af009
   );
 };
 

@@ -9,7 +9,6 @@
     },
     {
       "id": "1476",
-<<<<<<< HEAD
       "FirstName": "Ahmed",
       "LastName": "wael",
       "Email": "ahmedWael11@gmail.com",
@@ -21,12 +20,6 @@
       "LastName": "ahmed",
       "Email": "omarAhmed10@gmail.com",
       "Password": "omar1234!"
-=======
-      "FirstName": "ahmed",
-      "LastName": "wael",
-      "Email": "ahmedWael11@gmail.com",
-      "Password": "12345678@"
->>>>>>> 7a68e63663739d8565d6a17b398f4c0d6d8af009
     }
   ]
 }

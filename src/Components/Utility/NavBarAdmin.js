@@ -1,12 +1,20 @@
 import React from "react";
-import { Navbar, Container, FormControl, Nav } from "react-bootstrap";
+import { Navbar, Container, FormControl, Nav,  Dropdown  } from "react-bootstrap";
 import logo from "../../images/logo.png";
 import login from "../../images/login.png";
 import cart from "../../images/cart.png";
+import { logout } from "../../redux/AuthSlice";
+import { useDispatch, useSelector } from "react-redux";
 
-const NavBarLogin = () => {
-  
-  
+
+
+const NavBarAdmin = () => {
+  const dispatch = useDispatch();
+ const handleLogoutClick = () => {
+   dispatch(logout());
+   window.location.href = "/Login";
+
+ }
   return (
     <Navbar className="sticky-top" bg="dark" variant="dark" expand="sm">
       <Container>
@@ -24,12 +32,18 @@ const NavBarLogin = () => {
             aria-label="Search"
           />
           <Nav className="me-auto">
-            <Nav.Link
-              href="/Login"
-              className="nav-text d-flex mt-3 justify-content-center"
-            >
-              <img src={login} className="login-img" alt="Login-image" />
-              <p style={{ color: "white" }}>Login</p>
+            <Nav.Link className="nav-text d-flex mt-2 justify-content-center">
+              <Dropdown>
+                <Dropdown.Toggle id="custom-dropdown-toggle">
+                  Admin
+                </Dropdown.Toggle>
+
+                <Dropdown.Menu>
+                  <Dropdown.Item onClick={handleLogoutClick}>
+                    Log Out
+                  </Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
@@ -38,4 +52,4 @@ const NavBarLogin = () => {
   );
 };
 
-export default NavBarLogin;
+export default NavBarAdmin;

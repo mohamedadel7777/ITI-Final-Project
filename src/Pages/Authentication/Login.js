@@ -5,6 +5,8 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { Link, useNavigate } from "react-router-dom";
 import { loginUser } from "../../redux/AuthSlice";
 import { useDispatch } from "react-redux";
+import { CheckAdmin } from "../../redux/AuthSlice";
+import { useSelector } from "react-redux";
 
 // Define the schema for login validation with only email and password
 const loginSchema = z.object({
@@ -28,13 +30,21 @@ const Login = () => {
   });
   const navigate = useNavigate();
   const dispatch = useDispatch();
+  const isAdmin = useSelector((state) => state.auth.IsAdmin);
 
   const onSubmit = async (data) => {
+     
     try {
       const result = await dispatch(loginUser(data)).unwrap();
-      if (result) {
+      if(result && result.IsAdmin)
+      {
+         navigate("/Admin");
+      }
+      else if(result && !result.IsAdmin)
+      {
         navigate("/");
       }
+     
     } catch (error) {
       console.log(error);
       alert("please check your email and password");
@@ -42,7 +52,7 @@ const Login = () => {
   };
 
   return (
-    <Row className="my-5 m-0">
+    <Row className="my-5 m-0" style={{minHeight: '670px'}}>
       <Col md={{ span: 4, offset: 4 }}>
         <Card
           style={{
