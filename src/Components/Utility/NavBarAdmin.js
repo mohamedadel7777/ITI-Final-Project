@@ -19,7 +19,7 @@ const NavBarAdmin = () => {
     <Navbar className="sticky-top" bg="dark" variant="dark" expand="sm">
       <Container>
         <Navbar.Brand>
-          <a href="/">
+          <a href="">
             <img src={logo} className="logo" alt="Logo" />
           </a>
         </Navbar.Brand>

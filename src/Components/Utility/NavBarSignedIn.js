@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar, Container, FormControl, Nav, Dropdown } from "react-bootstrap";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import logo from "../../images/logo.png";
 import login from "../../images/login.png";
 import cart from "../../images/cart.png";
@@ -8,9 +8,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import { Badge } from "react-bootstrap";
 import "react-router-dom";
+import { logout } from "../../redux/AuthSlice";
 
 const NavBarSignedIn = () => {
   const user = useSelector((state) => state.auth.user);
+  const dispatch = useDispatch();
   const handleLogoutClick = () => {
     window.location.href = "./ReAuthenticate";
   };

@@ -37,6 +37,7 @@ const Cart = () => {
           textTransform: "capitalize",
           marginTop: "40px",
           fontSize: "40px",
+          minHeight: "670px"
         }}
       >
         Your cart is empty 👀

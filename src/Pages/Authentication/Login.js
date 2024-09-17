@@ -35,15 +35,12 @@ const Login = () => {
   const onSubmit = async (data) => {
      
     try {
-      const result = await dispatch(loginUser(data)).unwrap();
-      if(result && result.IsAdmin)
-      {
-         navigate("/Admin");
-      }
-      else if(result && !result.IsAdmin)
-      {
-        navigate("/");
-      }
+       const result = await dispatch(loginUser(data)).unwrap();
+        if (result.IsAdmin) {
+           navigate("/Admin"); 
+      } else {
+          navigate("/"); 
+    }
      
     } catch (error) {
       console.log(error);

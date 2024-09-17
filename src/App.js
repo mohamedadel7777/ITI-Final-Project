@@ -22,11 +22,15 @@ function App() {
   return (
     <div className="font">
       
-      {isLoggedIn && !isAdmin ? (
-        <NavBarSignedIn />
-      ) : !isLoggedIn && !isAdmin ? (
-        <NavBarLogin/>
-      ) : null}
+   {!isAdmin ? (
+    isLoggedIn ? (
+    <NavBarSignedIn />
+    ) : (
+    <NavBarLogin />
+    )
+     ) : null}
+    
+
     
       <BrowserRouter>
        <Routes>

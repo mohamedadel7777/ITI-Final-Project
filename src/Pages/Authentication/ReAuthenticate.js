@@ -6,7 +6,6 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../../redux/AuthSlice";
 
-// Schema for email and password validation
 const reauthSchema = z.object({
   Email: z.string().min(1, { message: "Email is required" }).email({ message: "Invalid email" }),
   Password: z.string().min(1, { message: "Password is required" }),
@@ -18,16 +17,15 @@ const ReAuthenticate = () => {
   });
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const user = useSelector((state) => state.auth.user); // Get current user info
+  const user = useSelector((state) => state.auth.user); 
   
 
   const onSubmit = (data) => {
-    // Basic validation to check if the email and password match
     
-      // Dispatch the logout action
      if (user && user.Email === data.Email && user.Password === data.Password) {
-      dispatch(logout());
       navigate("/Login");
+      dispatch(logout());
+
        }else {
       alert("Invalid credentials!");
     }

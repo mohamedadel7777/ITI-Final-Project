@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const API_URL = 'http://localhost:3000/users';
+ const API_URL = 'http://localhost:3000/users';
 
 export const registerUser = createAsyncThunk(
   'auth/register',
@@ -88,7 +88,7 @@ const authSlice = createSlice({
       })
       .addCase(loginUser.fulfilled, (state, action) => {
         state.isLoggedIn = true;
-        state.user = action.payload;
+        state.user = action.payload.user;
         state.IsAdmin = action.payload.IsAdmin;
       })
       .addCase(loginUser.rejected, (state, action) => {

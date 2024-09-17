@@ -1,25 +1,3 @@
 {
-  "users": [
-    {
-      "id": "2bee",
-      "FirstName": "mohamed",
-      "LastName": "adel",
-      "Email": "elmorsym04@gmail.com",
-      "Password": "12345678*"
-    },
-    {
-      "id": "1476",
-      "FirstName": "Ahmed",
-      "LastName": "wael",
-      "Email": "ahmedWael11@gmail.com",
-      "Password": "12345678@"
-    },
-    {
-      "id": "9155",
-      "FirstName": "omar",
-      "LastName": "ahmed",
-      "Email": "omarAhmed10@gmail.com",
-      "Password": "omar1234!"
-    }
-  ]
+  "users": []
 }
