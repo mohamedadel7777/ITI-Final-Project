@@ -1,17 +1,18 @@
 // src/components/CartPage.js
-<<<<<<< HEAD
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { removeFromCart, updateQuantity } from "../../redux/CartSlice";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
+
 
 const Cart = () => {
   const cartItems = useSelector((state) => state.cart.items); // Get cart items from Redux
   const totalQuantity = useSelector((state) => state.cart.totalQuantity);
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const handleRemoveFromCart = (id) => {
     dispatch(removeFromCart(id)); // Remove item from cart
@@ -57,39 +58,10 @@ const Cart = () => {
       >
         Shopping Cart
       </h2>
-=======
-import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { Container, Row, Col, Button } from 'react-bootstrap';
-import { removeFromCart } from '../../redux/CartSlice';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTrash } from '@fortawesome/free-solid-svg-icons';
-import bin from "../../images/bin.png"
-import { Link } from 'react-router-dom';
-
-
-const Cart = () => {
-  const cartItems = useSelector(state => state.cart.items);  // Get cart items from Redux
-  const totalQuantity = useSelector(state => state.cart.totalQuantity);
-  const dispatch = useDispatch();
-
-  const handleRemoveFromCart = (id) => {
-    dispatch(removeFromCart(id));  // Remove item from cart
-  };
-
-  if (totalQuantity === 0) {
-    return <p>Your cart is empty!</p>;  // Display message if cart is empty
-  }
-
-  return (
-    <Container style={{minHeight: "670px"}}>
-      <h2 style={{marginBottom: '60px'}}>Shopping Cart</h2>
->>>>>>> 7a68e63663739d8565d6a17b398f4c0d6d8af009
       {cartItems.map((item) => (
         <Row key={item.id} className="my-3">
           <Col md={3}>
             <Link to={`/ProductDetails/${item.id}`}>
-<<<<<<< HEAD
               <img
                 src={item.image}
                 alt={item.name}
@@ -143,8 +115,8 @@ const Cart = () => {
               </Button>
               <span
                 style={{
-                  fontSize: "18px",
-                  marginLeft: "4px",
+                  fontSize: "20px",
+                  marginLeft: "10px",
                 }}
               >
                 {item.quantity}
@@ -180,31 +152,10 @@ const Cart = () => {
               variant="danger"
               onClick={() => handleRemoveFromCart(item.id)}
               style={{ position: "absolute", right: "100px" }}
-=======
-            <img
-              src={item.image}
-              alt={item.name}
-              style={{ width: '100px', height: '100px' }}
-              />
-            </Link>
-            
-          </Col>
-          <Col md={5}>
-            <h4>{item.name}</h4>
-            <p><strong>Price:</strong> ${item.price}</p>
-            <p><strong>Quantity:</strong> {item.quantity}</p>
-          </Col>
-          <Col md={4}>
-            <Button 
-              variant="danger" 
-              onClick={() => handleRemoveFromCart(item.id)}
-              style={{position:'absolute', right: '100px'}}
->>>>>>> 7a68e63663739d8565d6a17b398f4c0d6d8af009
             >
               <FontAwesomeIcon icon={faTrash} />
             </Button>
           </Col>
-<<<<<<< HEAD
           <hr></hr>
         </Row>
       ))}
@@ -213,21 +164,51 @@ const Cart = () => {
           <h4
             style={{
               textTransform: "capitalize",
-              marginBottom: "20px",
               fontWeight: "bold",
-              fontSize: "35px",
-              color: "#0075ff",
+              fontSize: "40px",
+              color: "#f44336",
+              border: "2px solid #f44336",
+              width: "fit-content",
+              margin: "auto",
+              padding: "5px",
+              borderRadius: "10px",
             }}
           >
-            Total: {calculateTotal()}💲
+            Total Price :{" "}
+            <span
+              style={{
+                fontSize: "35px",
+                marginLeft: "4px",
+              }}
+            >
+              {calculateTotal()}💲
+            </span>
           </h4>
         </Col>
+        <Col md={12}>
+          <button
+            style={{
+              textTransform: "capitalize",
+              fontWeight: "bold",
+              fontSize: "30px",
+              color: "white",
+              backgroundColor: "#0075ff",
+              width: "fit-content",
+              margin: "30px auto 0",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              padding: "5px",
+              border: "2px solid white",
+              outline: "2px solid #0075ff",
+              borderRadius: "15px",
+            }}
+            onClick={() => navigate("/buynow", { replace: true })} // Redirect to /buynow when clicked
+          >
+            Buy Now
+          </button>
+        </Col>
       </Row>
-=======
-        </Row>
-        
-      ))}
->>>>>>> 7a68e63663739d8565d6a17b398f4c0d6d8af009
     </Container>
   );
 };
