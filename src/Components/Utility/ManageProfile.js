@@ -14,36 +14,10 @@ const ManageProfile = () => {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [error, setError] = useState(null);
-  const [updated, setUpdated] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (password !== confirmPassword) {
-      setError("Passwords do not match");
-      return;
-    }
-    const updatedProfile = {
-      FirstName: firstName,
-      LastName: lastName,
-      Email: email,
-      Password: password,
-    };
-    dispatch(updateProfile(updatedProfile));
-    if (
-      firstName !== user.FirstName ||
-      lastName !== user.LastName ||
-      email !== user.Email ||
-      password !== ""
-    ) {
-      setUpdated(true);
-    }
   };
-  useEffect(() => {
-    if (updated) {
-      alert("Profile updated successfully!");
-      setUpdated(false);
-    }
-  }, [updated]);
 
   return (
     <Container className="py-5">
