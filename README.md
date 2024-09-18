@@ -30,7 +30,7 @@ The following technologies were used in the development of this project:
 follow the following steps to run the project locally:
 
 <ul>
-  <li>Install Node.js from Node.js => https://nodejs.org/en </li>
+  <li>Install Node.js from <a href="https://nodejs.org/en" target="_blank">Node.js</a></li>
   <li>Clone this repo on your local machine.</li>
   <li>Run these commands on the project directory respectively:
   <ul>
@@ -44,8 +44,8 @@ follow the following steps to run the project locally:
 ## To run Live Demo
 
 <ul>
-  <li>First Open The Server => https://my-json-server.typicode.com/ahmedwael29/server</li>
-  <li>Second Open The Link => https://ahmedwael29.github.io/ITI-Final-Project/</li>
+  <li>First Open <a href="https://my-json-server.typicode.com/ahmedwael29/server" target="_blank">The Server</a></li>
+  <li>Second Open <a href="https://ahmedwael29.github.io/ITI-Final-Project/" target="_blank">This Link</a></li>
 </ul>
 
 ## ScreenShots From the project:
