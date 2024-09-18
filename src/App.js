@@ -23,7 +23,7 @@ function App() {
     <div className="font">
       {!isAdmin ? isLoggedIn ? <NavBarSignedIn /> : <NavBarLogin /> : null}
 
-      <HashRouter>
+      <HashRouter basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route index element={<HomePage />} />
           <Route path="/Login" element={<Login />} />
