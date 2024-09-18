@@ -30,7 +30,7 @@ follow the following steps to run the project:
   <ul>
     <li>npm install</li>
     <li>npm run json-server</li>
-    <li>npm install</li>
+    <li>npm run start</li>
   </ul>
   </li>
 </ul>
