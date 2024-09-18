@@ -1,5 +1,5 @@
 import HomePage from "./Pages/Home/HomePage";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
 import Login from "./Pages/Authentication/Login";
 import AllCategoriesPage from "./Pages/AllCategories/AllCategoriesPage";
 import AllBrandsPage from "./Pages/AllCategories/AllBrandsPage";
@@ -23,7 +23,7 @@ function App() {
     <div className="font">
       {!isAdmin ? isLoggedIn ? <NavBarSignedIn /> : <NavBarLogin /> : null}
 
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route index element={<HomePage />} />
           <Route path="/Login" element={<Login />} />
@@ -41,7 +41,7 @@ function App() {
           <Route path="/manage-profile" element={<ManageProfile />} />
           <Route path="/buynow" element={<BuyNowPage />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
       <Footer />
     </div>
   );
