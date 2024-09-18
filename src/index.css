@@ -30,8 +30,8 @@ a {
   height: 80vh;
 }
 .logo {
-  height: 46px;
-  width: 50px;
+  height: 65px;
+  width: 80px;
 }
 .login-img {
   height: 25px;
@@ -196,7 +196,7 @@ a {
   width: 100%;
   position: "fixed";
   bottom: 0;
-  zIndex: 1000;
+  z-index: 1000;
 }
 .footer-shoot {
   color: #979797;

@@ -1,10 +1,5 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
-import SubTitle from "../Utility/SubTitle";
-import earpods from "../../images/Earpods.webp";
-import macbook from "../../images/Mac.webp";
-import iPhone from "../../images/iPhone.jpeg";
-import smartWatch from "../../images/SmartWatch.webp";
 import { Products } from "./CardProductContainer";
 import { useParams, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
@@ -20,7 +15,6 @@ const ProductDetails = () => {
   const dispatch = useDispatch();
   const IsLoggedIn = useSelector((state) => state.auth.isLoggedIn);
   const navigate = useNavigate();
-
   const handleAddToCart = () => {
     if (IsLoggedIn) {
       dispatch(addToCart(product));
@@ -28,7 +22,6 @@ const ProductDetails = () => {
       navigate("/Login");
     }
   };
-
   if (!product) {
     return <p>Product not found!</p>;
   }
@@ -47,8 +40,6 @@ const ProductDetails = () => {
             }}
           />
         </Col>
-
-        {/* Title and details on the right */}
         <Col md={7}>
           <Card.Body>
             <Card.Title

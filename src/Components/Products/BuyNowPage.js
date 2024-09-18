@@ -1,4 +1,3 @@
-// src/components/BuyNowPage.js
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import { Container, Row, Col, Button, Form } from "react-bootstrap";
@@ -6,18 +5,14 @@ import { Container, Row, Col, Button, Form } from "react-bootstrap";
 const BuyNowPage = () => {
   const cartItems = useSelector((state) => state.cart.items);
   const totalQuantity = useSelector((state) => state.cart.totalQuantity);
-
   const [address, setAddress] = useState("");
   const [orderDone, setOrderDone] = useState(false);
-
   const calculateTotal = () => {
     return cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0);
   };
-
   const handleBuyNow = () => {
     setOrderDone(true);
   };
-
   if (orderDone) {
     return (
       <Container
@@ -138,7 +133,6 @@ const BuyNowPage = () => {
           <hr></hr>
         </Row>
       ))}
-
       <Row>
         <Col md={12}>
           <h4
@@ -148,13 +142,13 @@ const BuyNowPage = () => {
               fontWeight: "bold",
               fontSize: "40px",
               color: "#000000",
-              backgroundColor:"white",
+              backgroundColor: "white",
               textAlign: "center",
               width: "fit-content",
               margin: "auto",
               padding: "10px",
               borderRadius: "10px",
-              border: "2px solid black"
+              border: "2px solid black",
             }}
           >
             Total Price :{" "}
@@ -200,7 +194,6 @@ const BuyNowPage = () => {
                 </Form.Group>
               </Col>
             </Row>
-
             <Row className="justify-content-center">
               <Col md={6}>
                 <Button

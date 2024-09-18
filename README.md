@@ -27,7 +27,7 @@ The following technologies were used in the development of this project:
 
 ## Setup
 
-follow the following steps to run the project:
+follow the following steps to run the project on local:
 
 <ul>
   <li>Install Node.js from [Node.js](https://nodejs.org/en) </li>
@@ -39,6 +39,13 @@ follow the following steps to run the project:
     <li>npm run start (Another CMD)</li>
   </ul>
   </li>
+</ul>
+
+## To run Live Demo
+
+<ul>
+  <li>First Open : [The Server](https://my-json-server.typicode.com/ahmedwael29/server)</li>
+  <li>[Go Here](https://ahmedwael29.github.io/ITI-Final-Project/)</li>
 </ul>
 
 ## ScreenShots From the project:

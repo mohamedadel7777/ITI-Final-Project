@@ -8,7 +8,6 @@ import iPhone from "../../images/iPhone.jpeg";
 import smartWatch from "../../images/SmartWatch.webp";
 
 export const Products = [
-  
   {
     id: 1,
     name: "earpods pro g2",
@@ -18,7 +17,6 @@ export const Products = [
     price: "380",
     rating: 4.1,
   },
-
   {
     id: 2,
     name: "macbook pro g3",
@@ -28,7 +26,6 @@ export const Products = [
     price: "2600",
     rating: 4.6,
   },
-
   {
     id: 3,
     name: "iphone 15 pro max",
@@ -38,7 +35,6 @@ export const Products = [
     price: "1200",
     rating: 4.5,
   },
-
   {
     id: 4,
     name: "apple watch s10",

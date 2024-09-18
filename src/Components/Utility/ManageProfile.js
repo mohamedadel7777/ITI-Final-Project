@@ -38,7 +38,6 @@ const ManageProfile = () => {
       setUpdated(true);
     }
   };
-
   useEffect(() => {
     if (updated) {
       alert("Profile updated successfully!");

@@ -1,4 +1,3 @@
-// src/components/CartPage.js
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { Container, Row, Col, Button } from "react-bootstrap";
@@ -22,11 +21,10 @@ const Cart = () => {
     return cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0);
   };
 
-  //
+  // Update the quantity
   const handleUpdateQuantity = (id, newQuantity) => {
     dispatch(updateQuantity({ id, newQuantity }));
   };
-
   if (totalQuantity === 0) {
     return (
       <p

@@ -5,7 +5,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../../redux/AuthSlice";
-import { Button } from "react-bootstrap";
 
 const reauthSchema = z.object({
   Email: z
@@ -26,7 +25,6 @@ const ReAuthenticate = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const user = useSelector((state) => state.auth.user);
-
   const onSubmit = (data) => {
     if (user && user.Email === data.Email && user.Password === data.Password) {
       navigate("/Login");

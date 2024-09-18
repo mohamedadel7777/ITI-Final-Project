@@ -1,10 +1,8 @@
 import React from "react";
 import { Navbar, Container, FormControl, Nav, Dropdown } from "react-bootstrap";
-import logo from "../../images/logo.png";
-import login from "../../images/login.png";
-import cart from "../../images/cart.png";
+import logo from "../../images/logo2.png";
 import { logout } from "../../redux/AuthSlice";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 
 const NavBarAdmin = () => {
   const dispatch = useDispatch();
@@ -16,7 +14,7 @@ const NavBarAdmin = () => {
     <Navbar className="sticky-top" bg="dark" variant="dark" expand="sm">
       <Container>
         <Navbar.Brand>
-          <a href="">
+          <a href="#/Admin">
             <img src={logo} className="logo" alt="Logo" />
           </a>
         </Navbar.Brand>
