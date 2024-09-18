@@ -57,7 +57,7 @@ const ProductDetails = () => {
                 marginBottom: "20px",
                 fontWeight: "bold",
                 fontSize: "25px",
-                color: "#0075ff",
+                color: "#000000",
                 textAlign: "left",
               }}
             >

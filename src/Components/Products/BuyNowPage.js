@@ -56,8 +56,8 @@ const BuyNowPage = () => {
     >
       <h2
         style={{
-          color: "#0075ff",
-          borderColor: "#0075ff",
+          color: "#000000",
+          borderColor: "#000000",
         }}
         className="admin-content-text-products"
       >
@@ -73,17 +73,17 @@ const BuyNowPage = () => {
             />
           </Col>
           <Col md={5}>
-            <h4
+            <h5
               style={{
                 textTransform: "capitalize",
                 marginBottom: "20px",
                 fontWeight: "bold",
-                fontSize: "35px",
-                color: "#0075ff",
+                fontSize: "25px",
+                color: "#000000",
               }}
             >
               {item.name}
-            </h4>
+            </h5>
             <p
               style={{
                 color: "#272727",
@@ -148,13 +148,14 @@ const BuyNowPage = () => {
               marginBottom: "20px",
               fontWeight: "bold",
               fontSize: "40px",
-              color: "#0075ff",
-              backgroundColor:"black",
+              color: "#000000",
+              backgroundColor:"white",
               textAlign: "center",
               width: "fit-content",
               margin: "auto",
               padding: "10px",
               borderRadius: "10px",
+              border: "2px solid black"
             }}
           >
             Total Price :{" "}
@@ -212,7 +213,7 @@ const BuyNowPage = () => {
                     padding: "15px",
                     fontSize: "18px",
                     borderRadius: "10px",
-                    backgroundColor: "#0075ff",
+                    backgroundColor: "#20c997",
                     border: "none",
                     color: "white",
                     cursor: "pointer",
