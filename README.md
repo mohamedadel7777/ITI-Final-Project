@@ -1,10 +1,13 @@
 # E-Commerce Website (ITI Final Project)
 
 ## About the Project
+
 This e-commerce platform is a comprehensive online marketplace that offers users a smooth shopping experience. The website features user logins, a product catalogue, a virtual shopping cart, and an administrative dashboard for managing the store. The project was developed with growth and speed in mind, ensuring a quick and responsive user interface on all devices.
 
 ## Technologies
+
 The following technologies were used in the development of this project:
+
 <ul>
   <li><strong>Frontend :</strong> HTML5, CSS3, JavaScript, React Bootstrap, React.js, Redux</li>
   <li><strong>Authentication:</strong> JSON Web Tokens (JWT)</li>
@@ -12,6 +15,7 @@ The following technologies were used in the development of this project:
 </ul>
 
 ## Features
+
 <ul>
   <li><strong>User Authentication:</strong> Secure login and registration system.</li>
   <li><strong>Product Browsing:</strong> Browse products by categories with detailed product pages.</li>
@@ -22,20 +26,23 @@ The following technologies were used in the development of this project:
 </ul>
 
 ## Setup
+
 follow the following steps to run the project:
+
 <ul>
   <li>Install Node.js from [Node.js](https://nodejs.org/en) </li>
   <li>Clone this repo on your local machine.</li>
   <li>Run these commands on the project directory respectively:
   <ul>
     <li>npm install</li>
-    <li>npm run json-server</li>
-    <li>npm run start</li>
+    <li>json-server --watch db.json (CMD)</li>
+    <li>npm run start (Another CMD)</li>
   </ul>
   </li>
 </ul>
 
 ## ScreenShots From the project:
+
 <picture>
   <img alt="Project image 1" src="./src/assets/ProjectScreenshots/1.png">
 </picture>
@@ -69,4 +76,3 @@ follow the following steps to run the project:
 <picture>
   <img alt="Project image 11" src="./src/assets/ProjectScreenshots/11.png">
 </picture>
-
