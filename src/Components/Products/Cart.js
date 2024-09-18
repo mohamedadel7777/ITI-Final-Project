@@ -42,7 +42,7 @@ const Cart = () => {
       >
         Your cart is empty 👀
       </p>
-    ); // Display message if cart is empty
+    ); 
   }
 
   return (
@@ -52,13 +52,14 @@ const Cart = () => {
     >
       <h2
         style={{
-          color: "#0075ff",
-          borderColor: "#0075ff",
+          color: "#000000",
+          borderColor: "#000000",
         }}
         className="admin-content-text-products"
       >
         Shopping Cart
       </h2>
+      <hr />
       {cartItems.map((item) => (
         <Row key={item.id} className="my-3">
           <Col md={3}>
@@ -71,17 +72,17 @@ const Cart = () => {
             </Link>
           </Col>
           <Col md={5}>
-            <h4
+            <h5
               style={{
                 textTransform: "capitalize",
                 marginBottom: "20px",
                 fontWeight: "bold",
-                fontSize: "35px",
-                color: "#0075ff",
+                fontSize: "25px",
+                color: "#000000",
               }}
             >
               {item.name}
-            </h4>
+            </h5>
             <p
               style={{
                 color: "#272727",
@@ -108,9 +109,9 @@ const Cart = () => {
             >
               <strong>Quantity:</strong>{" "}
               <Button
-                variant="primary"
                 onClick={() => handleUpdateQuantity(item.id, item.quantity - 1)}
-                style={{ marginLeft: "10px" }}
+                style={{ marginLeft: "10px", backgroundColor : "red", borderColor:"red" }}
+
               >
                 -
               </Button>
@@ -123,9 +124,9 @@ const Cart = () => {
                 {item.quantity}
               </span>
               <Button
-                variant="primary"
+                
                 onClick={() => handleUpdateQuantity(item.id, item.quantity + 1)}
-                style={{ marginLeft: "10px" }}
+                style={{ marginLeft: "10px", backgroundColor: "#20c997", borderColor:"#20c997" }}
               >
                 +
               </Button>
@@ -167,8 +168,8 @@ const Cart = () => {
               textTransform: "capitalize",
               fontWeight: "bold",
               fontSize: "40px",
-              color: "#f44336",
-              border: "2px solid #f44336",
+              color: "	#000000",
+              border: "2px solid 	#000000",
               width: "fit-content",
               margin: "auto",
               padding: "5px",
@@ -193,7 +194,7 @@ const Cart = () => {
               fontWeight: "bold",
               fontSize: "30px",
               color: "white",
-              backgroundColor: "#0075ff",
+              backgroundColor: "#20c997",
               width: "fit-content",
               margin: "30px auto 0",
               display: "flex",
@@ -201,10 +202,10 @@ const Cart = () => {
               alignItems: "center",
               padding: "5px",
               border: "2px solid white",
-              outline: "2px solid #0075ff",
+              outline: "2px solid #20c997",
               borderRadius: "15px",
             }}
-            onClick={() => navigate("/buynow", { replace: true })} // Redirect to /buynow when clicked
+            onClick={() => navigate("/buynow", { replace: true })} 
           >
             Buy Now
           </button>

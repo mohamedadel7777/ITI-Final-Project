@@ -5,6 +5,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../../redux/AuthSlice";
+import { Button } from "react-bootstrap";
 
 const reauthSchema = z.object({
   Email: z
@@ -36,7 +37,7 @@ const ReAuthenticate = () => {
   };
 
   return (
-    <div className="container mt-5">
+    <div className="container mt-5" style={{ minHeight: "670px" }}>
       <h2>Re Enter your Email and Password to Log Out</h2>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="mb-3">
@@ -57,8 +58,18 @@ const ReAuthenticate = () => {
             <p className="text-danger">{errors.Password.message}</p>
           )}
         </div>
-        <button type="submit" className="btn btn-primary">
-          Submit
+        <button
+          type="submit"
+          style={{
+            backgroundColor: "#ff0000",
+            color: "white",
+            border: "2px solid #ff0000",
+            borderRadius: "20px",
+            width: "100px",
+            height: "50px",
+          }}
+        >
+          Logout
         </button>
       </form>
     </div>
