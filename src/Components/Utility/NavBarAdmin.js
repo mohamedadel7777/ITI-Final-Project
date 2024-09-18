@@ -8,7 +8,7 @@ const NavBarAdmin = () => {
   const dispatch = useDispatch();
   const handleLogoutClick = () => {
     dispatch(logout());
-    window.location.href = "/Login";
+    window.location.href = "#/Login";
   };
   return (
     <Navbar className="sticky-top" bg="dark" variant="dark" expand="sm">
