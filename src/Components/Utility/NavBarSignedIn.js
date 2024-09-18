@@ -9,6 +9,7 @@ import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import { Badge } from "react-bootstrap";
 import "react-router-dom";
 import { logout } from "../../redux/AuthSlice";
+import HomePage from "../../Pages/Home/HomePage";
 
 const NavBarSignedIn = () => {
   const user = useSelector((state) => state.auth.user);
@@ -25,7 +26,7 @@ const NavBarSignedIn = () => {
     <Navbar className="sticky-top" bg="dark" variant="dark" expand="sm">
       <Container>
         <Navbar.Brand>
-          <a href="/">
+          <a href="/HomePage">
             <img src={logo} className="logo" alt="Logo" />
           </a>
         </Navbar.Brand>

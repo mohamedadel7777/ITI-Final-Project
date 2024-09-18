@@ -5,8 +5,7 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import { removeFromCart, updateQuantity } from "../../redux/CartSlice";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
-import { Link,useNavigate } from "react-router-dom";
-
+import { Link, useNavigate } from "react-router-dom";
 
 const Cart = () => {
   const cartItems = useSelector((state) => state.cart.items); // Get cart items from Redux
@@ -37,12 +36,12 @@ const Cart = () => {
           textTransform: "capitalize",
           marginTop: "40px",
           fontSize: "40px",
-          minHeight: "670px"
+          minHeight: "670px",
         }}
       >
         Your cart is empty 👀
       </p>
-    ); 
+    );
   }
 
   return (
@@ -110,8 +109,11 @@ const Cart = () => {
               <strong>Quantity:</strong>{" "}
               <Button
                 onClick={() => handleUpdateQuantity(item.id, item.quantity - 1)}
-                style={{ marginLeft: "10px", backgroundColor : "red", borderColor:"red" }}
-
+                style={{
+                  marginLeft: "10px",
+                  backgroundColor: "red",
+                  borderColor: "red",
+                }}
               >
                 -
               </Button>
@@ -124,9 +126,12 @@ const Cart = () => {
                 {item.quantity}
               </span>
               <Button
-                
                 onClick={() => handleUpdateQuantity(item.id, item.quantity + 1)}
-                style={{ marginLeft: "10px", backgroundColor: "#20c997", borderColor:"#20c997" }}
+                style={{
+                  marginLeft: "10px",
+                  backgroundColor: "#20c997",
+                  borderColor: "#20c997",
+                }}
               >
                 +
               </Button>
@@ -205,7 +210,7 @@ const Cart = () => {
               outline: "2px solid #20c997",
               borderRadius: "15px",
             }}
-            onClick={() => navigate("/buynow", { replace: true })} 
+            onClick={() => navigate("/buynow", { replace: true })}
           >
             Buy Now
           </button>
