@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
 
 const UsersTable = () => {
-  const API_URL = "https://my-json-server.typicode.com/ahmedwael29/server/users";
+  const API_URL = "https://my-json-server.typicode.com/ahmedwael29/server";
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
