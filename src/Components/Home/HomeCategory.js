@@ -8,10 +8,10 @@ import laptop from "../../images/laptop.png";
 import sale from "../../images/sale.png";
 import pic from "../../images/pic.png";
 
-const HomeCategory = () => {
+const HomeCategory = ({title,btnTitle}) => {
   return (
     <Container>
-      <SubTiltle title={"CATEGORIES"} />
+      <SubTiltle title={title} btntitle={btnTitle} pathText="/AllCatagoriesPage" />
       <Row className="d-flex my-2 justify-content-between">
         <CategoryCard title={"Sale"} background={"#0075ff"} img={clothe} />
         <CategoryCard title={"Sale"} background={"#f4dba5"} img={cat2} />

@@ -1,15 +1,14 @@
 import React from "react";
 import { Navbar, Container, FormControl, Nav } from "react-bootstrap";
-import logo from "../../images/logo.png";
+import logo from "../../images/logo2.png";
 import login from "../../images/login.png";
-import cart from "../../images/cart.png";
 
 const NavBarLogin = () => {
   return (
     <Navbar className="sticky-top" bg="dark" variant="dark" expand="sm">
       <Container>
         <Navbar.Brand>
-          <a href="/">
+          <a href="#/">
             <img src={logo} className="logo" alt="Logo" />
           </a>
         </Navbar.Brand>
@@ -23,7 +22,7 @@ const NavBarLogin = () => {
           />
           <Nav className="me-auto">
             <Nav.Link
-              href="/Login"
+              href="#/Login"
               className="nav-text d-flex mt-3 justify-content-center"
             >
               <img src={login} className="login-img" alt="Login-image" />

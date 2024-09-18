@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import {Carousel} from "react-bootstrap";
-
+import { Carousel } from "react-bootstrap";
 import sliderimg from "../../images/slider1.png";
 import slider4 from "../../images/slider4.png";
 import prod3 from "../../images/prod3.png";
@@ -39,7 +38,6 @@ const Silder = () => {
           />
         </div>
       </Carousel.Item>
-
       <Carousel.Item className="slider-background3" interval={2000}>
         <div className="d-flex flex-row justify-content-center align-items-center">
           <div className="">
@@ -53,7 +51,6 @@ const Silder = () => {
           />
         </div>
       </Carousel.Item>
-
       <Carousel.Item className="slider-background4" interval={2000}>
         <div className="d-flex flex-row justify-content-center align-items-center">
           <div className="">

@@ -146,7 +146,6 @@ const Register = () => {
                     Login
                   </Link>
                 </p>
-                {/* Link to the register page */}
               </div>
             </Col>
           </Row>

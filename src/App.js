@@ -1,5 +1,5 @@
 import HomePage from "./Pages/Home/HomePage";
-import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import Login from "./Pages/Authentication/Login";
 import AllCategoriesPage from "./Pages/AllCategories/AllCategoriesPage";
 import AllBrandsPage from "./Pages/AllCategories/AllBrandsPage";

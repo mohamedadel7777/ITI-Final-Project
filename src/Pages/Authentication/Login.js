@@ -5,7 +5,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { Link, useNavigate } from "react-router-dom";
 import { loginUser } from "../../redux/AuthSlice";
 import { useDispatch } from "react-redux";
-import { CheckAdmin } from "../../redux/AuthSlice";
 import { useSelector } from "react-redux";
 
 // Define the schema for login validation with only email and password
@@ -31,7 +30,6 @@ const Login = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const isAdmin = useSelector((state) => state.auth.IsAdmin);
-
   const onSubmit = async (data) => {
     try {
       const result = await dispatch(loginUser(data)).unwrap();

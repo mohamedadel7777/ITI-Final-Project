@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const SubTiltle = ({ title, btntitle, pathText }) => {
+const SubTitle = ({ title, btntitle, pathText }) => {
   return (
     <div className="d-flex justify-content-between pt-4">
       <div className="sub-title">{title}</div>
@@ -14,4 +14,4 @@ const SubTiltle = ({ title, btntitle, pathText }) => {
   );
 };
 
-export default SubTiltle;
+export default SubTitle;

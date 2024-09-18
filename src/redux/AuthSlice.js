@@ -1,8 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-const API_URL = "http://localhost:3000/users";
-
+const API_URL = "https://my-json-server.typicode.com/ahmedwael29/server/users";
 export const registerUser = createAsyncThunk(
   "auth/register",
   async (userData, { rejectWithValue }) => {
@@ -24,13 +23,11 @@ export const loginUser = createAsyncThunk(
         (user) => user.Email === Email && user.Password === Password
       );
       const admin = Email === "admin@gmail.com" && Password === "123456789!";
-
       if (!user && !admin) {
         return rejectWithValue("Invalid credentials");
       } else if (!user && admin) {
         return { IsAdmin: true, user: null };
       }
-
       return { user, IsAdmin: false };
     } catch (error) {
       return rejectWithValue(error.response.data);
@@ -56,12 +53,10 @@ const authSlice = createSlice({
     updateProfile(state, action) {
       state.user = action.payload;
     },
-
     register: (state, action) => {
       state.isLoggedIn = true;
       state.user = action.payload;
     },
-
     logout: (state) => {
       state.isLoggedIn = false;
       state.IsAdmin = false;
@@ -75,7 +70,6 @@ const authSlice = createSlice({
   },
   extraReducers: (builder) => {
     builder
-
       .addCase(registerUser.fulfilled, (state, action) => {
         state.isLoggedIn = true;
         state.user = action.payload;
