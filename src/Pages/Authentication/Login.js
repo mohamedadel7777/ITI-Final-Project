@@ -41,7 +41,7 @@ const Login = () => {
         navigate("/");
       }
     } catch (error) {
-      alert("please check your email and password");
+      alert("Please Check Your Email And Password");
     }
   };
 
