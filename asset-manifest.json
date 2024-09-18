@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ITI-Final-Project/static/css/main.c8975a45.css",
-    "main.js": "/ITI-Final-Project/static/js/main.287b836a.js",
+    "main.js": "/ITI-Final-Project/static/js/main.10b545e1.js",
     "static/media/laptops.png": "/ITI-Final-Project/static/media/laptops.a5a6ab642345b5d38784.png",
     "static/media/slider4.png": "/ITI-Final-Project/static/media/slider4.8049dedb7c458a0534a5.png",
     "static/media/prod4.png": "/ITI-Final-Project/static/media/prod4.60c973db7361e54bb831.png",
@@ -19,10 +19,10 @@
     "static/media/Earpods.webp": "/ITI-Final-Project/static/media/Earpods.d28db932ace72cc91820.webp",
     "index.html": "/ITI-Final-Project/index.html",
     "main.c8975a45.css.map": "/ITI-Final-Project/static/css/main.c8975a45.css.map",
-    "main.287b836a.js.map": "/ITI-Final-Project/static/js/main.287b836a.js.map"
+    "main.10b545e1.js.map": "/ITI-Final-Project/static/js/main.10b545e1.js.map"
   },
   "entrypoints": [
     "static/css/main.c8975a45.css",
-    "static/js/main.287b836a.js"
+    "static/js/main.10b545e1.js"
   ]
 }
