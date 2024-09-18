@@ -23,7 +23,7 @@ function App() {
     <div className="font">
       {!isAdmin ? isLoggedIn ? <NavBarSignedIn /> : <NavBarLogin /> : null}
 
-      <HashRouter basename={process.env.PUBLIC_URL}>
+      <HashRouter basename={`ITI-Final-Project`}>
         <Routes>
           <Route index element={<HomePage />} />
           <Route path="/Login" element={<Login />} />
