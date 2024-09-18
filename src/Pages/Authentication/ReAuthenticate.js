@@ -1,36 +1,38 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-import { zodResolver } from '@hookform/resolvers/zod';
+import { zodResolver } from "@hookform/resolvers/zod";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../../redux/AuthSlice";
 
 const reauthSchema = z.object({
-  Email: z.string().min(1, { message: "Email is required" }).email({ message: "Invalid email" }),
+  Email: z
+    .string()
+    .min(1, { message: "Email is required" })
+    .email({ message: "Invalid email" }),
   Password: z.string().min(1, { message: "Password is required" }),
 });
 
 const ReAuthenticate = () => {
-  const { register, handleSubmit, formState: { errors } } = useForm({
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
     resolver: zodResolver(reauthSchema),
   });
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const user = useSelector((state) => state.auth.user); 
-  
+  const user = useSelector((state) => state.auth.user);
 
   const onSubmit = (data) => {
-    
-     if (user && user.Email === data.Email && user.Password === data.Password) {
+    if (user && user.Email === data.Email && user.Password === data.Password) {
       navigate("/Login");
       dispatch(logout());
-
-       }else {
-      alert("Invalid credentials!");
+    } else {
+      alert("Invalid Credentials!");
     }
-
-    
   };
 
   return (
@@ -39,12 +41,10 @@ const ReAuthenticate = () => {
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="mb-3">
           <label>Email</label>
-          <input
-            type="email"
-            className="form-control"
-            {...register("Email")}
-          />
-          {errors.Email && <p className="text-danger">{errors.Email.message}</p>}
+          <input type="email" className="form-control" {...register("Email")} />
+          {errors.Email && (
+            <p className="text-danger">{errors.Email.message}</p>
+          )}
         </div>
         <div className="mb-3">
           <label>Password</label>
@@ -53,9 +53,13 @@ const ReAuthenticate = () => {
             className="form-control"
             {...register("Password")}
           />
-          {errors.Password && <p className="text-danger">{errors.Password.message}</p>}
+          {errors.Password && (
+            <p className="text-danger">{errors.Password.message}</p>
+          )}
         </div>
-        <button type="submit" className="btn btn-primary">Submit</button>
+        <button type="submit" className="btn btn-primary">
+          Submit
+        </button>
       </form>
     </div>
   );

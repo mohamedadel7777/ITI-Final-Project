@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import { Container, Row, Col, Button, Form } from "react-bootstrap";
-import { Link } from "react-router-dom";
 
 const BuyNowPage = () => {
   const cartItems = useSelector((state) => state.cart.items);

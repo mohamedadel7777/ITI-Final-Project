@@ -16,6 +16,9 @@ const NavBarSignedIn = () => {
   const handleLogoutClick = () => {
     window.location.href = "./ReAuthenticate";
   };
+  const handleManageProfile = () => {
+    window.location.href = "./manage-profile";
+  };
   const cartItems = useSelector((state) => state.cart.items);
 
   return (
@@ -42,8 +45,8 @@ const NavBarSignedIn = () => {
                 </Dropdown.Toggle>
 
                 <Dropdown.Menu>
-                  <Dropdown.Item href="#/action-1">
-                    manage Your Profile
+                  <Dropdown.Item onClick={handleManageProfile}>
+                    Manage Your Profile
                   </Dropdown.Item>
                   <Dropdown.Item onClick={handleLogoutClick}>
                     Log Out

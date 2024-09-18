@@ -24,7 +24,7 @@ const UsersTable = () => {
       await axios.delete(`${API_URL}/${userId}`);
       setUsers(users.filter((user) => user.id !== userId));
     } catch (error) {
-      alert('Error deleting user:', error);
+      alert("Error deleting user:", error);
     }
   };
 
@@ -37,7 +37,7 @@ const UsersTable = () => {
             <th>First Name</th>
             <th>Last Name</th>
             <th>Email</th>
-            <th>Actions</th> 
+            <th>Actions</th>
           </tr>
         </thead>
         <tbody>
@@ -49,9 +49,9 @@ const UsersTable = () => {
               <td>{user.Email}</td>
               <td>
                 <Button
-                  variant="danger" 
-                  onClick={() => handleDelete(user.id)} 
-                  style={{ marginRight: "20px" }} 
+                  variant="danger"
+                  onClick={() => handleDelete(user.id)}
+                  style={{ marginRight: "20px" }}
                 >
                   <FontAwesomeIcon icon={faTrash} />
                 </Button>

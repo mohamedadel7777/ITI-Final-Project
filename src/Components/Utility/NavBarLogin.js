@@ -5,8 +5,6 @@ import login from "../../images/login.png";
 import cart from "../../images/cart.png";
 
 const NavBarLogin = () => {
-  
-  
   return (
     <Navbar className="sticky-top" bg="dark" variant="dark" expand="sm">
       <Container>

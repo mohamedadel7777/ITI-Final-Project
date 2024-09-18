@@ -12,25 +12,23 @@ const signUpSchema = z
     LastName: z.string().min(1, { message: "LastName is required" }),
     Email: z
       .string()
-      .min(1, { message: "email is required" })
-      .email({ message: "that is not an email" }),
+      .min(1, { message: "Email is required" })
+      .email({ message: "That is not an email" }),
     Password: z
       .string()
       .min(8, {
-        message: "password is too short:(should at least be 8 characters long)",
+        message: "Password is too short:(should at least be 8 characters long)",
       })
       .regex(/.*[!@#$%^&*()_+{}:";'<>?,.].*/, {
-        message: "password should contain at least one special character",
+        message: "Password should contain at least one special character",
       }),
-    ConfirmPassword: z
-      .string()
-      .min(8, {
-        message:
-          "confirmpassword is too short: (should at least be 8 characters long)",
-      }),
+    ConfirmPassword: z.string().min(8, {
+      message:
+        "Confirm password is too short: (should at least be 8 characters long)",
+    }),
   })
   .refine((input) => input.Password === input.ConfirmPassword, {
-    message: "the two passwords do not match",
+    message: "The two passwords do not match",
     path: ["ConfirmPassword"],
   });
 

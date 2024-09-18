@@ -1,20 +1,17 @@
 import React from "react";
-import { Navbar, Container, FormControl, Nav,  Dropdown  } from "react-bootstrap";
+import { Navbar, Container, FormControl, Nav, Dropdown } from "react-bootstrap";
 import logo from "../../images/logo.png";
 import login from "../../images/login.png";
 import cart from "../../images/cart.png";
 import { logout } from "../../redux/AuthSlice";
 import { useDispatch, useSelector } from "react-redux";
 
-
-
 const NavBarAdmin = () => {
   const dispatch = useDispatch();
- const handleLogoutClick = () => {
-   dispatch(logout());
-   window.location.href = "/Login";
-
- }
+  const handleLogoutClick = () => {
+    dispatch(logout());
+    window.location.href = "/Login";
+  };
   return (
     <Navbar className="sticky-top" bg="dark" variant="dark" expand="sm">
       <Container>
@@ -37,7 +34,6 @@ const NavBarAdmin = () => {
                 <Dropdown.Toggle id="custom-dropdown-toggle">
                   Admin
                 </Dropdown.Toggle>
-
                 <Dropdown.Menu>
                   <Dropdown.Item onClick={handleLogoutClick}>
                     Log Out

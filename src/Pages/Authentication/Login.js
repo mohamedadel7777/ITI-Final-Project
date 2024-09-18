@@ -33,23 +33,20 @@ const Login = () => {
   const isAdmin = useSelector((state) => state.auth.IsAdmin);
 
   const onSubmit = async (data) => {
-     
     try {
-       const result = await dispatch(loginUser(data)).unwrap();
-        if (result.IsAdmin) {
-           navigate("/Admin"); 
+      const result = await dispatch(loginUser(data)).unwrap();
+      if (result.IsAdmin) {
+        navigate("/Admin");
       } else {
-          navigate("/"); 
-    }
-     
+        navigate("/");
+      }
     } catch (error) {
-      console.log(error);
       alert("please check your email and password");
     }
   };
 
   return (
-    <Row className="my-5 m-0" style={{minHeight: '670px'}}>
+    <Row className="my-5 m-0" style={{ minHeight: "670px" }}>
       <Col md={{ span: 4, offset: 4 }}>
         <Card
           style={{

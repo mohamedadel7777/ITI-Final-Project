@@ -57,3 +57,16 @@ follow the following steps to run the project:
 <picture>
   <img alt="Project image 7" src="./src/assets/ProjectScreenshots/6.png">
 </picture>
+<picture>
+  <img alt="Project image 8" src="./src/assets/ProjectScreenshots/8.png">
+</picture>
+<picture>
+  <img alt="Project image 9" src="./src/assets/ProjectScreenshots/9.png">
+</picture>
+<picture>
+  <img alt="Project image 10" src="./src/assets/ProjectScreenshots/10.png">
+</picture>
+<picture>
+  <img alt="Project image 11" src="./src/assets/ProjectScreenshots/11.png">
+</picture>
+
