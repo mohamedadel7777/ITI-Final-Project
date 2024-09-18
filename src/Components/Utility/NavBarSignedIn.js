@@ -2,31 +2,27 @@ import React from "react";
 import { Navbar, Container, FormControl, Nav, Dropdown } from "react-bootstrap";
 import { useSelector, useDispatch } from "react-redux";
 import logo from "../../images/logo.png";
-import login from "../../images/login.png";
-import cart from "../../images/cart.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 import { Badge } from "react-bootstrap";
 import "react-router-dom";
-import { logout } from "../../redux/AuthSlice";
-import HomePage from "../../Pages/Home/HomePage";
+
 
 const NavBarSignedIn = () => {
   const user = useSelector((state) => state.auth.user);
   const dispatch = useDispatch();
   const handleLogoutClick = () => {
-    window.location.href = "./ReAuthenticate";
+    window.location.href = "#/ReAuthenticate";
   };
   const handleManageProfile = () => {
-    window.location.href = "./manage-profile";
+    window.location.href = "#/manage-profile";
   };
   const cartItems = useSelector((state) => state.cart.items);
-
   return (
     <Navbar className="sticky-top" bg="dark" variant="dark" expand="sm">
       <Container>
         <Navbar.Brand>
-          <a href="/HomePage">
+          <a href="#/">
             <img src={logo} className="logo" alt="Logo" />
           </a>
         </Navbar.Brand>
@@ -44,7 +40,6 @@ const NavBarSignedIn = () => {
                 <Dropdown.Toggle id="custom-dropdown-toggle">
                   {user.FirstName} {user.LastName}
                 </Dropdown.Toggle>
-
                 <Dropdown.Menu>
                   <Dropdown.Item onClick={handleManageProfile}>
                     Manage Your Profile
@@ -55,7 +50,7 @@ const NavBarSignedIn = () => {
                 </Dropdown.Menu>
               </Dropdown>
             </Nav.Link>
-            <Nav.Link href="/cart">
+            <Nav.Link href="#/cart">
               <div
                 style={{
                   position: "absolute",
