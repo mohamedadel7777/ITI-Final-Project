@@ -105,16 +105,20 @@ const Cart = () => {
               }}
             >
               <strong>Quantity:</strong>{" "}
-              <Button
-                onClick={() => handleUpdateQuantity(item.id, item.quantity - 1)}
-                style={{
-                  marginLeft: "10px",
-                  backgroundColor: "red",
-                  borderColor: "red",
-                }}
-              >
-                -
-              </Button>
+              {!(item.quantity === 1) && (
+                <Button
+                  onClick={() =>
+                    handleUpdateQuantity(item.id, item.quantity - 1)
+                  }
+                  style={{
+                    marginLeft: "10px",
+                    backgroundColor: "red",
+                    borderColor: "red",
+                  }}
+                >
+                  -
+                </Button>
+              )}
               <span
                 style={{
                   fontSize: "20px",

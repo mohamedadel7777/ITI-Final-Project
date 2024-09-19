@@ -34,9 +34,8 @@ follow the following steps to run the project locally:
   <li>Clone this repo on your local machine.</li>
   <li>Run these commands on the project directory respectively:
   <ul>
-    <li>npm install</li>
-    <li>json-server --watch db.json (CMD)</li>
-    <li>npm run start (Another CMD)</li>
+    <li><code>npm install</code></li>
+    <li><code>npm run start</code></li>
   </ul>
   </li>
 </ul>
@@ -44,8 +43,7 @@ follow the following steps to run the project locally:
 ## To run Live Demo
 
 <ul>
-  <li>First Open <a href="https://my-json-server.typicode.com/ahmedwael29/server" target="_blank">The Server</a></li>
-  <li>Second Open <a href="https://ahmedwael29.github.io/ITI-Final-Project/" target="_blank">This Link</a></li>
+  <li>Run <a href="https://ahmedwael29.github.io/ITI-Final-Project/" target="_blank">This Link</a></li>
 </ul>
 
 ## ScreenShots From the project:

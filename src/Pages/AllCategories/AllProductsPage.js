@@ -7,8 +7,6 @@ function AllProducts() {
       <div className="admin-content-text-products mt-3">All Products</div>
       <ProductContainer />
       <ProductContainer />
-      <ProductContainer />
-      <ProductContainer />
     </div>
   );
 }

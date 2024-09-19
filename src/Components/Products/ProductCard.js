@@ -12,11 +12,12 @@ const ProductCard = ({ imgName, productTitle, price, rating, productId }) => {
           className="my-2"
           style={{
             width: "100%",
-            height: "345px",
             borderRadius: "8px",
             border: "none",
             backgroundColor: "#FFFFFF",
-            boxShadow: "2px 2px 2px 0 rgba(151,151,151,0.5)",
+            boxShadow:
+              "2px 2px 2px 0 rgba(151,151,151,0.5),-2px -2px 2px 0 rgba(151,151,151,0.5)",
+            padding: "10px",
           }}
         >
           <Card.Img
@@ -41,7 +42,7 @@ const ProductCard = ({ imgName, productTitle, price, rating, productId }) => {
               </div>
             </Card.Title>
             <Card.Text>
-              <div className="d-flex justify-content-between ">
+              <div className="d-flex justify-content-between">
                 <div className="d-flex">
                   <div className="card-price">{price}</div>
                   <div className="card-currency mx-1">$</div>

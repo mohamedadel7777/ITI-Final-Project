@@ -6,6 +6,15 @@ import earpods from "../../images/Earpods.webp";
 import macbook from "../../images/Mac.webp";
 import iPhone from "../../images/iPhone.jpeg";
 import smartWatch from "../../images/SmartWatch.webp";
+import iPadPro from "../../images/iPadPro.jpeg";
+import AirPodsMax from "../../images/AirPodsMax.jpeg";
+import HomePodMini from "../../images/HomePodMini.jpeg";
+import AppleTV4K from "../../images/AppleTV4K.jpeg";
+import AppleWatchSeries8 from "../../images/AppleWatchSeries8.jpeg"
+import MacBookAirM2 from "../../images/MacBookAirM2.jpeg"
+import iPhone14Pro from "../../images/iPhone14Pro.jpeg"
+import HomePod from "../../images/HomePod.jpeg"
+
 
 export const Products = [
   {
@@ -44,6 +53,78 @@ export const Products = [
     price: "750",
     rating: 4.8,
   },
+  {
+    id: 5,
+    name: "iPad Pro 12.9-inch",
+    image: iPadPro,
+    description:
+      "The iPad Pro is a powerful tablet that combines the versatility of a laptop with the portability of a tablet. Its large, high-resolution display offers stunning visuals for creative work, gaming, and entertainment. Powered by a powerful processor, it handles demanding tasks with ease, making it ideal for professionals and students alike. With its support for Apple Pencil and Magic Keyboard, the iPad Pro is a versatile tool for productivity and creativity.",
+    price: "1000",
+    rating: 4.9,
+  },
+  {
+    id: 6,
+    name: "AirPods Max",
+    image: AirPodsMax,
+    description:
+      "Immerse yourself in studio-quality sound with the AirPods Max. These premium headphones feature adaptive noise cancellation, spatial audio, and custom-designed drivers for a truly immersive listening experience. With a comfortable, over-ear design and long battery life, the AirPods Max are perfect for music lovers and professionals who demand the best audio quality.",
+    price: "500",
+    rating: 4.7,
+  },
+  {
+    id: 7,
+    name: "HomePod mini",
+    image: HomePodMini,
+    description:
+      "The HomePod mini is a compact smart speaker that delivers powerful sound and intelligent features. With Siri integration, you can control your smart home devices, play music, set alarms, and more. Its sleek design and rich, room-filling sound make it a perfect addition to any home.",
+    price: "150",
+    rating: 4.4,
+  },
+  {
+    id: 8,
+    name: "Apple TV 4K",
+    image: AppleTV4K,
+    description:
+      "Enjoy stunning 4K HDR content with the Apple TV 4K. Its powerful processor delivers smooth performance for gaming, streaming, and more. With Siri integration, you can easily find your favorite shows and movies, control your smart home devices, and enjoy a seamless entertainment experience.",
+    price: "3000",
+    rating: 4.5,
+  },
+  {
+    id: 9,
+    name: "Apple Watch Series 8",
+    image: AppleWatchSeries8,
+    description:
+      "The Apple Watch Series 8 is a versatile smartwatch that offers advanced health features, fitness tracking, and seamless integration with your iPhone. With its always-on display, heart rate monitoring, and crash detection, it's your personal health companion. Enjoy various workout modes, sleep tracking, and customizable watch faces to suit your style.",
+    price: "499",
+    rating: 4.8,
+  },
+  {
+    id: 10,
+    name: "MacBook Air M2",
+    image: MacBookAirM2,
+    description:
+      "The MacBook Air M2 is a lightweight and powerful laptop that delivers impressive performance for everyday tasks and creative workflows. Its sleek design, long battery life, and stunning Retina display make it a versatile choice for students, professionals, and creatives alike.",
+    price: "1299",
+    rating: 4.7,
+  },
+  {
+    id: 11,
+    name: "iPhone 14 Pro",
+    image: iPhone14Pro,
+    description:
+      "The iPhone 14 Pro is a premium smartphone with a stunning Dynamic Island, powerful A16 Bionic chip, and a pro-grade camera system. Capture stunning photos and videos, enjoy immersive AR experiences, and experience lightning-fast performance. With its durable design and long battery life, the iPhone 14 Pro is the ultimate companion for work and play.",
+    price: "999",
+    rating: 4.9,
+  },
+  {
+    id: 12,
+    name: "HomePod",
+    image: HomePod,
+    description:
+      "The HomePod is a powerful smart speaker that delivers rich, room-filling sound and intelligent features. With Siri integration, control your smart home devices, play music, set alarms, and more. Its sleek design and premium audio quality make it a perfect addition to any home.",
+    price: "349",
+    rating: 4.6,
+  },
 ];
 
 const CardProductContainer = ({ title, btnTitle }) => {
@@ -60,7 +141,7 @@ const CardProductContainer = ({ title, btnTitle }) => {
         />
         <ProductCard
           imgName={macbook}
-          productTitle={"Mac book Pro"}
+          productTitle={"Mac Book Pro"}
           price={2600}
           rating={4.6}
           productId={2}
@@ -78,6 +159,34 @@ const CardProductContainer = ({ title, btnTitle }) => {
           price={750}
           rating={4.8}
           productId={4}
+        />
+        <ProductCard
+          imgName={iPadPro}
+          productTitle={"IPad Pro 12.9-Inch"}
+          price={1000}
+          rating={4.9}
+          productId={5}
+        />
+        <ProductCard
+          imgName={AirPodsMax}
+          productTitle={"AirPods Max"}
+          price={500}
+          rating={4.7}
+          productId={6}
+        />
+        <ProductCard
+          imgName={HomePodMini}
+          productTitle={"Home Pod Mini"}
+          price={150}
+          rating={4.4}
+          productId={7}
+        />
+        <ProductCard
+          imgName={AppleTV4K}
+          productTitle={"Apple TV 4K"}
+          price={3000}
+          rating={4.8}
+          productId={8}
         />
       </Row>
     </Container>
