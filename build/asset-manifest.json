@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/ITI-Final-Project/static/css/main.c8975a45.css",
+    "main.js": "/ITI-Final-Project/static/js/main.a479780b.js",
+    "static/media/laptops.png": "/ITI-Final-Project/static/media/laptops.a5a6ab642345b5d38784.png",
+    "static/media/slider4.png": "/ITI-Final-Project/static/media/slider4.8049dedb7c458a0534a5.png",
+    "static/media/prod4.png": "/ITI-Final-Project/static/media/prod4.60c973db7361e54bb831.png",
+    "static/media/slider1.png": "/ITI-Final-Project/static/media/slider1.2d6dc5a9c0fd289461ee.png",
+    "static/media/prod3.png": "/ITI-Final-Project/static/media/prod3.c073f706ba444448c519.png",
+    "static/media/logo2.png": "/ITI-Final-Project/static/media/logo2.980a4a22ed8fda192274.png",
+    "static/media/clothe.png": "/ITI-Final-Project/static/media/clothe.63497de16012693f71f1.png",
+    "static/media/cat2.png": "/ITI-Final-Project/static/media/cat2.cb9155160d37d36502be.png",
+    "static/media/laptop.png": "/ITI-Final-Project/static/media/laptop.72427ac57eccb337dd2b.png",
+    "static/media/pic.png": "/ITI-Final-Project/static/media/pic.c1f340e9b514ac94aa83.png",
+    "static/media/sale.png": "/ITI-Final-Project/static/media/sale.fd3bd0e8262078e4961a.png",
+    "static/media/MacBookAirM2.jpeg": "/ITI-Final-Project/static/media/MacBookAirM2.1384ae655f72fb08eba8.jpeg",
+    "static/media/brand3.png": "/ITI-Final-Project/static/media/brand3.1a0049b1f1a261d0e6d1.png",
+    "static/media/SmartWatch.webp": "/ITI-Final-Project/static/media/SmartWatch.5d3f69036e13e5aed62b.webp",
+    "static/media/Mac.webp": "/ITI-Final-Project/static/media/Mac.51162dcaf016dfb6dcf1.webp",
+    "static/media/Earpods.webp": "/ITI-Final-Project/static/media/Earpods.d28db932ace72cc91820.webp",
+    "index.html": "/ITI-Final-Project/index.html",
+    "main.c8975a45.css.map": "/ITI-Final-Project/static/css/main.c8975a45.css.map",
+    "main.a479780b.js.map": "/ITI-Final-Project/static/js/main.a479780b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c8975a45.css",
+    "static/js/main.a479780b.js"
+  ]
+}
