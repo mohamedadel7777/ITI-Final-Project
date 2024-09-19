@@ -44,8 +44,8 @@ follow the following steps to run the project locally:
 ## To run Live Demo
 
 <ul>
-  <li>First Open <a href="https://my-json-server.typicode.com/ahmedwael29/server" target="_blank">The Server</a></li>
-  <li>Second Open <a href="https://ahmedwael29.github.io/ITI-Final-Project/" target="_blank">This Link</a></li>
+<!--   <li>First Open <a href="https://my-json-server.typicode.com/ahmedwael29/server" target="_blank">The Server</a></li> -->
+  <li>Open <a href="https://ahmedwael29.github.io/ITI-Final-Project/" target="_blank">This Link</a></li>
 </ul>
 
 ## ScreenShots From the project:
